@@ -1,10 +1,8 @@
 #include <stdint.h>
 #include <Arduino.h>
 /*
-ECE4144 ADC Hands On Homework - Complete File
-
 =====================================================
-Part 1: ADC Code Using Macros (Annotated)
+Part 1:
 -----------------------------------------------------
 void adc_init(void)
 {
@@ -19,7 +17,6 @@ int readAdc(char chan)
     while (ADCSRA & (1 << ADSC)); // Wait until conversion completes (ADSC becomes 0)
     return ADCW; // ADCW holds the 10-bit conversion result (from ADCL and ADCH)
 }
-=====================================================
 */
 
 /*
@@ -46,6 +43,7 @@ int readAdc(char chan)
     ;
   return *adcw;
 }
+s
 /*
 =====================================================
 Part 3:
