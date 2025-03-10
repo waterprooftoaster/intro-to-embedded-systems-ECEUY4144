@@ -1,0 +1,11 @@
+         +5V
+          │
+         [Internal Temperature Sensor]
+          │   (selected via ADC channel)
+         ┌┴┐
+         │µC│ ATmega32U4                                 
+         └┬┘
+          │  PWM output (e.g. OC1B)
+          │  ┌────┐
+          └──│LED │────[330 Ω]──── Ground
+             └────┘
