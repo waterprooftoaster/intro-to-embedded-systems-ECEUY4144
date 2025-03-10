@@ -1,0 +1,35 @@
+        +5V
+          │
+          │
+        ┌─┴─┐
+        │TMP│
+        │36 │
+        └─┬─┘
+          │   TMP36:
+          │   • V+ connected to +5V  
+          │   • GND connected to ground  
+          │   • Analog Output (Vout) gives: 
+          │     Vout (mV) = 500 + 10·(Temperature in °C)
+          │
+          └─────────────┐
+                        │
+                      (ADC0)
+         ATmega32U4   ┌─┴─┐
+         ┌───────────│ ADC │
+         │           └─────┘
+         │
+         │         PWM output (OC1A)
+         │         ┌────┐
+         └─────────┤    │
+                   │LED │────[330 Ω]──── Ground
+                   │    │
+                   └────┘
+                                
+                                
+                                
+                                
+                                
+                                /\_/\    meow       
+                               ( o.o ) 
+                                > ^ <        
+
