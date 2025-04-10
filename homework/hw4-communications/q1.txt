@@ -1,0 +1,28 @@
+a. UCSR1A:
+    UCSR1A = 0x00
+
+b. UCSR1B:
+
+    UDRIE1 = 1
+
+    RXEN1 = 1
+
+    TXEN1 = 0
+
+    TXCIE1 = 0
+
+    UCSZ12 = 0
+
+c. UCSR1C
+    UMSEL1[1:0] = 00
+
+    UPM1[1:0] = 00
+
+    USBS1 = 0
+
+    UCSZ11 = 1 and UCSZ10 = 1
+
+    UCPOL1 = 0
+
+d. UBRR1
+    UBRR1 = 8, with UBRR1H = 0 and UBRR1L = 8
