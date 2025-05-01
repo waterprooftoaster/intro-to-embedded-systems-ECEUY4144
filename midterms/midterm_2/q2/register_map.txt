@@ -1,0 +1,18 @@
+Addr	Name	   Bit 7	6	       5	    4	    3	2	1	0	R/W	 Reset
+0x00	STATUS	   —	    —	       DRDY	    ERR	    OVF	RES	RES	RES	R/W	 0x00
+0x01	CTRL1	   EN	    MODE[2]	   MODE[1]	MODE[0]	RES	RES	RES	RES	R/W	 0x80
+0x02	TEMP	   T[15]	…	T[0]	—	    —	    —	—	—	    R	 0x00
+0x03	DATA_H	   V[15]	…	V[8]	—	    —	    —	—	—	    R	 0x00
+0x04	DATA_L	   V[7]	…	V[0]	    —	    —	    —	—	—	    R	 0x00
+0x05	FIFO_CNT   CNT[3]	…	CNT[0]	—	    —	    —	—	—	    R/W  0x00
+0x06	CTRL2	   RESET	RES	       RES	    RES	    RES	RES	RES	RES	R/W  0x00
+
+EN (bit 7 of CTRL1): 1=enable device
+
+MODE[2:0]: 000=standby, 001=continuous sampling, 010=breath‐rate mode, others reserved
+
+DRDY (STATUS bit 5): Data ready flag (cleared on read)
+
+ERR (STATUS bit 4): Error flag (cleared via CTRL2 RESET)
+
+OVF (STATUS bit 3): FIFO overflow count saturates at 0x
