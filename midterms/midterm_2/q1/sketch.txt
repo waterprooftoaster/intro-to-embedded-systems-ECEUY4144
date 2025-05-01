@@ -1,0 +1,27 @@
+           +3.3 V
+             │
+            ┌┴┐
+            │ │ 4.7 kΩ
+            └┬┘
+             │
+Micro A5 —───┼─── SCL ─── MAX30100 Pin 2 (SCL)
+            ┌┴┐
+            │ │ 4.7 kΩ
+            └┬┘
+             │
+Micro A4 —───┼─── SDA ─── MAX30100 Pin 3 (SDA)
+            ┌┴┐
+            │ │ 4.7 kΩ
+            └┬┘
+             │
+           GND ──── MAX30100 Pin 1 (GND)
+
+Micro D2 (INT0) ──► MAX30100 Pin 6 (INT)
+
+Onboard LED (D13) ──► Blink indicator in ISR
+
+
+   /\_/\  
+  ( o.o )     |  |
+   > ^ < _____|  |
+         ________|
